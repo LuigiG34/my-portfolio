@@ -1,0 +1,78 @@
+h1{
+    margin: 5% 0;
+}
+
+div.circles{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    margin: 30px;
+    background: linear-gradient(110deg, rgba(180, 180, 180, 0.5), rgba(150, 150, 150, 0.25));
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+    border-radius: 100%;
+    -webkit-box-shadow: 0px -1px 10px 0px var(--secondary);
+    box-shadow: 0px -1px 10px 0px var(--secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: .6;
+    transition: .6s ease-in-out;
+}
+
+.circles:hover{
+    opacity: 1;
+}
+
+.circles img{
+    width: 100%;
+}
+
+section hr{
+    width: 100%;
+}
+
+.last-article{
+    margin-bottom: 5%;
+}
+
+article{
+    padding: 50px;
+}
+
+@media screen and (max-width: 1880px) {
+    .circles {
+        width: 150px!important;
+        height: 150px!important;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .circles {
+        width: 125px!important;
+        height: 125px!important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .circles{
+        padding: 10px!important;
+        width: 90px!important;
+        height: 90px!important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .circles{
+        padding: 10px!important;
+        width: 150px!important;
+        height: 150px!important;
+    }
+
+    article{
+        flex-direction: column;
+    }
+}

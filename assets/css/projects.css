@@ -1,0 +1,45 @@
+section{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+article{
+    width: 100%;
+}
+
+article div img {
+    width: 50px;
+}
+
+h1, h2, h3 {
+    padding: 25px 0 0 0;
+}
+
+p{
+    padding: 0 0 25px 0;
+}
+
+@media screen and (max-width: 1440px) {
+    img{
+        width: 500px;
+    }
+
+    article div img {
+        width: 35px;
+    }
+}
+@media screen and (max-width: 550px) {
+    img{
+        width: 100%;
+    }
+
+    h1{
+        text-align: left;
+    }
+    section{
+        flex-direction: column;
+    }
+    footer section{
+        flex-direction: row;
+    }
+}
